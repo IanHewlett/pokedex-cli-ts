@@ -1,6 +1,6 @@
 import { State } from "./state.js";
 
-export function startREPL(state: State) {
+export async function startREPL(state: State) {
     state.readline.prompt();
 
     state.readline.on("line", async (input) => {
@@ -11,6 +11,7 @@ export function startREPL(state: State) {
         }
 
         const commandName = words[0];
+
         const cmd = state.commands[commandName];
         if (!cmd) {
             console.log(
@@ -21,9 +22,9 @@ export function startREPL(state: State) {
         }
 
         try {
-            cmd.callback(state);
+            await cmd.callback(state);
         } catch (e) {
-            console.log(e);
+            console.log((e as Error).message);
         }
 
         state.readline.prompt();
