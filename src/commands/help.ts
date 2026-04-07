@@ -1,4 +1,4 @@
-import { State } from "../state.js";
+import { State } from "../types.js";
 
 export async function commandHelp(state: State) {
     console.log();

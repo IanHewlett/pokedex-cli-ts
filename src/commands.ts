@@ -6,8 +6,7 @@ import { commandCatch } from "./commands/catch.js";
 import { commandInspect } from "./commands/inspect.js";
 import { commandPokedex } from "./commands/pokedex.js";
 
-
-import type { CLICommand } from "./state.js";
+import type { CLICommand } from "./types.js";
 
 export function getCommands(): Record<string, CLICommand> {
     return {
