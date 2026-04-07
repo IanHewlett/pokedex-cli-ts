@@ -1,10 +1,10 @@
-import { commandHelp } from "./commands/command_help.js";
-import { commandExit } from "./commands/command_exit.js";
-import { commandMapForward, commandMapBack } from "./commands/command_map.js";
-import { commandExplore } from "./commands/command_explore.js";
-import { commandCatch } from "./commands/command_catch.js";
-import { commandInspect } from "./commands/command_inspect.js";
-import { commandPokedex } from "./commands/command_pokedex.js";
+import { commandHelp } from "./commands/help.js";
+import { commandExit } from "./commands/exit.js";
+import { commandMapForward, commandMapBack } from "./commands/map.js";
+import { commandExplore } from "./commands/explore.js";
+import { commandCatch } from "./commands/catch.js";
+import { commandInspect } from "./commands/inspect.js";
+import { commandPokedex } from "./commands/pokedex.js";
 
 
 import type { CLICommand } from "./state.js";
