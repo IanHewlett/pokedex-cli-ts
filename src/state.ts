@@ -3,18 +3,18 @@ import { getCommands } from "./commands.js";
 import { PokeAPI } from "./pokeapi.js";
 
 export function initState(cacheInterval: number) {
-    const rl = createInterface({
-        input: process.stdin,
-        output: process.stdout,
-        prompt: "Pokedex > ",
-    });
+  const rl = createInterface({
+    input: process.stdin,
+    output: process.stdout,
+    prompt: "Pokedex > ",
+  });
 
-    return {
-        readline: rl,
-        commands: getCommands(),
-        pokeAPI: new PokeAPI(cacheInterval),
-        nextLocationsURL: "",
-        prevLocationsURL: "",
-        caughtPokemon: {},
-    };
+  return {
+    readline: rl,
+    commands: getCommands(),
+    pokeAPI: new PokeAPI(cacheInterval),
+    nextLocationsURL: "",
+    prevLocationsURL: "",
+    caughtPokemon: {},
+  };
 }
