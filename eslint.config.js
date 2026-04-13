@@ -16,7 +16,8 @@ export default defineConfig([
   tseslint.configs.recommended,
   {
     rules: {
-      "@typescript-eslint/no-explicit-any": "off"
+      "@typescript-eslint/no-explicit-any": "off",
+      "preserve-caught-error": "off"
     }
   }
 ]);
