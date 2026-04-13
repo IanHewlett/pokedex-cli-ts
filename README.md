@@ -1,3 +1,5 @@
+![alt text goes here](https://github.com/IanHewlett/pokedex-cli-ts/actions/workflows/ci.yml/badge.svg)
+
 # Pokedex CLI
 
 A simple command-line Pokedex application built with **TypeScript** and **Node.js**.
